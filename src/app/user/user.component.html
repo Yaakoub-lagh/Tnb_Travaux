@@ -1,0 +1,99 @@
+<!-- component -->
+<header>
+    <!-- component -->
+ <div class="space-y-5">
+   <div class="border-b border-b-gray-200">
+     <ul class="-mb-px flex items-center gap-4 text-sm font-medium">
+       <li class="flex-1">
+         <a
+           href="/user"
+           class="relative flex items-center justify-center gap-2 px-1 py-3 text-blue-700 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-blue-700 hover:text-blue-700"
+         >
+           Demande</a
+         >
+       </li>
+       <li class="flex-1">
+         <a href="/profile" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+           Profile</a
+         >
+       </li>
+       <ul class="flex">
+        <li class="flex-1">
+          <a href="/login" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+            <i class="fas fa-sign-in-alt"></i> <!-- Font Awesome sign-in icon -->
+          </a>
+        </li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+      
+     </ul>
+   </div>
+   
+ </div>
+ 
+   </header>
+<div class="flex items-center justify-center p-12">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="mx-auto w-full max-w-[550px]">
+      <form action="https://formbold.com/s/FORM_ID" method="POST">
+        <div class="mb-5">
+          <label
+            for="name"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Category
+          </label>
+          <select
+          name="name"
+          id="name"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+        >
+          <option value="" disabled selected>Select Category</option>
+          <option value="John Doe">John Doe</option>
+          <option value="Jane Doe">Jane Doe</option>
+          <!-- Add more options as needed -->
+        </select>
+        
+        </div>
+        <div class="mb-5">
+          <label
+            for="email"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Longueur
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@domain.com"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="subject"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Largeur
+          </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+       
+        <div>
+          <button
+            class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+          >
+            Envoyer Demande
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

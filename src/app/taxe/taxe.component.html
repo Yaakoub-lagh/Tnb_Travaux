@@ -1,0 +1,114 @@
+<header>
+  <!-- component -->
+<div class="space-y-5">
+ <div class="border-b border-b-gray-200">
+   <ul class="-mb-px flex items-center gap-4 text-sm font-medium">
+     <li class="flex-1">
+       <a
+         href="/admin"
+         class="relative flex items-center justify-center gap-2 px-1 py-3 text-blue-700 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-blue-700 hover:text-blue-700"
+       >
+         Demande d'inscription</a
+       >
+     </li>
+     <li class="flex-1">
+       <a href="/index" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+         Demande Terrain</a
+       >
+     </li>
+     <li class="flex-1">
+       <a href="/terrain" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+Terrain         </a>
+       
+     </li>
+     <li class="flex-1">
+       <a href="/category" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+         Category</a
+       >
+     </li>
+     <li class="flex-1">
+       <a href="/taxe" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700"
+         >Taxe</a
+       >
+     </li>
+     <ul class="flex">
+      <li class="flex-1">
+        <a href="/login" class="flex items-center justify-center gap-2 px-1 py-3 text-gray-500 hover:text-blue-700">
+          <i class="fas fa-sign-in-alt"></i> <!-- Font Awesome sign-in icon -->
+        </a>
+      </li>
+      <!-- Add more navigation items as needed -->
+    </ul>
+   </ul>
+ </div>
+ 
+</div>
+
+ </header>
+ <div>
+      <!-- component -->
+<!-- Tailwind CSS Playground : https://play.tailwindcss.com/KbKtNzkOBy -->
+
+<!-- Your existing form HTML -->
+
+<form class="flex flex-wrap gap-3 w-full p-5">
+  <label class="relative ml-20 flex flex-col">
+    <span class="font-bold mb-3">Taxe</span>
+    <input class="rounded-md peer  pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300" type="text" name="card_number" placeholder="taxe" />
+    <svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 -mb-0.5 transform translate-x-1/2 -translate-y-1/2 text-black peer-placeholder-shown:text-gray-300 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    </svg>
+  </label>
+  <div class="ml-20 mt-7">
+      <button class="middle none center mr-4 rounded-lg bg-blue-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" data-ripple-light="true">
+        Ajouter
+      </button>
+    </div>
+
+  <!-- Add a table -->
+  <table class="min-w-full border-collapse block md:table">
+      <thead class="block md:table-header-group">
+        <tr class="border border-grey-500 md:border-none block md:table-row absolute -top-full md:top-auto -left-full md:left-auto  md:relative ">
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Id</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Taxe</th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Category </th>
+          <th class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="block md:table-row-group">
+          <tr class="bg-gray-300 border border-grey-500 md:border-none block md:table-row">
+              <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell" style="width: 20%;">
+                <span class="inline-block w-full md:hidden font-bold">Name</span>
+                <div class="flex items-center">
+                  <img src="profile-image.jpg" alt="Profile" class="w-10 h-10 rounded-full mr-2 md:hidden">
+                  <span class="md:inline-block">Jamal Rios</span>
+                </div>
+                
+              </td>
+              <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell" style="width: 20%;">
+                <span class="inline-block w-full md:hidden font-bold">User Name</span>
+                jrios1
+              </td>
+              <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell" style="width: 20%;">
+                <span class="inline-block w-full md:hidden font-bold">User Name</span>
+                jrios1
+              </td>
+              <td class="p-2 md:border md:border-grey-500 text-left block md:table-cell" style="width: 15%;">
+                <span class="inline-block w-full md:hidden font-bold">Actions</span>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded md:mr-2">Modifier</button>
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded">Supprimer</button>
+                <button  routerLink="/details" class="bg-yellow-500 hover:bg-yellow-700 text-white  ml-2 font-bold py-1 px-2 border border-yellow-500 rounded">Details</button>
+
+              </td>
+            </tr>
+            
+            
+       
+        
+           
+      </tbody>
+    </table>
+
+  <!-- Your existing button -->
+
+</form>
+
