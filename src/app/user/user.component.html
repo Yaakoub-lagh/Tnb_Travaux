@@ -50,8 +50,10 @@
           class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
         >
           <option value="" disabled selected>Select Category</option>
-          <option value="John Doe">John Doe</option>
-          <option value="Jane Doe">Jane Doe</option>
+          <option value="John Doe">Villa</option>
+          <option value="Jane Doe">Immeuble</option>
+          <option value="Jane Doe">Lotissement</option>
+
           <!-- Add more options as needed -->
         </select>
         
@@ -61,7 +63,7 @@
             for="email"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Longueur
+            Superficie
           </label>
           <input
             type="email"
@@ -76,7 +78,7 @@
             for="subject"
             class="mb-3 block text-base font-medium text-[#07074D]"
           >
-            Largeur
+            address
           </label>
           <input
             type="text"
@@ -87,13 +89,20 @@
           />
         </div>
        
-        <div>
-          <button
-            class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
-          >
+        <form (ngSubmit)="onSubmit()">
+          <!-- Your form fields go here -->
+        
+          <button type="submit" class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">
             Envoyer Demande
           </button>
+        </form>
+        
+        <div *ngIf="showAlert" class="flex bg-green-100 rounded-lg p-4 mb-4 text-sm text-green-700" role="alert">
+          <svg class="w-5 h-5 inline mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <!-- Your SVG path here -->
+          </svg>
+          <div>
+            <span class="font-medium">Votre demande a été bien traité!</span> 
+          </div>
         </div>
-      </form>
-    </div>
-  </div>
+        
